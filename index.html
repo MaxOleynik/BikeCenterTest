@@ -72,14 +72,26 @@
             <div class="container">
                 <div class="menu__main-wrap">
                     <div class="menu__main">
-                        <a class="logo__link" href="#"><img class="logo" src="img/main-logo.svg" alt="logo"></a>
                         <div class="menu__search-wrap">
+                            <a class="logo__link" href="#">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/icon/logo-mobile.svg">
+                                    <img class="logo" src="img/main-logo.svg" alt="logo">
+                                </picture>
+                            </a>
                             <button class="menu__main-catalog_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                                 <a class="catalog" href="#">Каталог</a>
                             </button>
                             <label class="menu__search">
-                                <input id="live-search" placeholder="Поиск на сайте" type="search"><a href="#"><img
-                                        src="img/icon/search.svg" alt="search"></a>
+                                <input id="live-search" placeholder="Поиск на сайте" type="search"><a href="#">
+                                    <picture>
+                                        <source media="(max-width: 425px)" srcset="img/icon/search-white.svg">
+                                        <img src="img/icon/search.svg" alt="search">
+                                    </picture>
+                                </a>
                             </label>
                         </div>
                     </div>
@@ -88,25 +100,38 @@
                             <div class="circle__wrap">
                                 <img src="img/icon/login.svg" alt="login">
                             </div>
-                            <a class="login" href="#">Вход</a>
+                            <a class="login" href="#">
+                                <p>Вход</p>
+                            </a>
                         </button>
                         <div class="menu__user-items">
                             <div class="menu__user-order">
-                                <img src="img/icon/order.svg" alt="order">
-                                <a class="order" href="#">Заказы</a>
+                                <a class="order" href="#">
+                                    <img src="img/icon/order.svg" alt="order">
+                                    <p>Заказы</p>
+                                </a>
                             </div>
                             <div class="menu__user-comparison">
-                                <img src="img/icon/comparsion.svg" alt="comparison">
-                                <a class="comparison" href="#">Сравнение</a>
+                                <a class="comparison" href="#">
+                                    <img src="img/icon/comparsion.svg" alt="comparison">
+                                    <p>Сравнение</p>
+                                </a>
                             </div>
                             <div class="menu__user-favorite">
-                                <img src="img/icon/favorite.svg" alt="favorite">
-                                <a class="favorite" href="#">Избранное</a>
+                                <a class="favorite" href="#">
+                                    <img src="img/icon/favorite.svg" alt="favorite">
+                                    <p>Избранное</p>
+                                </a>
                             </div>
                             <div class="menu__user-basket">
-                                <span>1</span>
-                                <img src="img/icon/basket.svg" alt="basket">
-                                <a class="basket" href="#">Корзина</a>
+                                <a class="basket" href="#">
+                                    <span>1</span>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="img/icon/white-basket.svg">
+                                        <img src="img/icon/basket.svg" alt="basket">
+                                    </picture>
+                                    <p>Корзина</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -555,7 +580,7 @@
     </header>
 
     <main class="main">
-        <div class="container">
+        <div class="container-main">
             <div class="breadcrumbs">
                 <div class="main__page">Главная страница</div>
                 <div class="help__page">Помощь</div>
@@ -611,8 +636,12 @@
                         <h2 class="warranty__title">Гарантия</h2>
                         <p class="warrnty__descr">Информацию по всем вопросам гарантии можно узнать тут.</p>
                     </div>
-                    <button class="warranty__btn">Гарантийные талоны</button>
+                    <button class="warranty__btn">Гарантийные талоны <img src="img/icon/arrow-right.svg"
+                            alt="arrow"></button>
                 </div>
+                <h4 class="delivery__title-mobile">
+                    Доставка
+                </h4>
                 <div class="delivery">
                     <img class="delivery__img" src="img/delivery.png" alt="delivery">
                     <div class="delivery__wrap">
@@ -707,10 +736,159 @@
                         000000000</a></div>
             </div>
         </div>
+        <div class="container__mobile">
+            <div class="main__title-wrap">
+                <h1 class="main__title">Помощь</h1>
+                <div class="main__phone">
+                    <p class="main__hotline">Телефон горячей линии</p>
+                    <a class="main__phone-number" href="tel:88005003020">8 (800) 500-30-20</a>
+                </div>
+            </div>
+            <div class="help">
+                <img src="img/help.png" alt="help">
+                <h2 class="help__title">Мы всегда рады помочь</h2>
+                <p class="help__subtitle">Если у вас есть нерешенный вопрос</p>
+                <button class="help__btn">Напишите нам в чат</button>
+            </div>
+            <h4 class="delivery__title-mobile">
+                Доставка
+            </h4>
+            <div class="delivery">
+                <img class="delivery__img" src="img/delivery.png" alt="delivery">
+                <div class="delivery__wrap">
+                    <h2 class="delivery__title">Доставка</h2>
+                    <p class="delivery__descr">
+                        Стоимость доставки будет зависеть от города в котором вы находитесь
+                    </p>
+                    <button class="delivery__btn">Узнать подробнее</button>
+                </div>
+            </div>
+            <div class="bonus">
+                <img class="bonus__img" src="img/bonus.png" alt="bonus">
+                <h2 class="bonus__title">Бонусная система</h2>
+                <div class="bonus__wrap">
+                    <ul class="bonus__list">
+                        <li class="bonus__item">Покупай.</li>
+                        <li class="bonus__item">Управляй заказами.</li>
+                        <li class="bonus__item">Накапливай cashback—бонусы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pay">
+                <h2 class="pay__title">Оплата</h2>
+                <ul class="pay__links">
+                    <li class="pay__link"><a href="#">Как оплатить заказ</a></li>
+                    <li class="pay__link"><a href="#">Наложенный платёж</a></li>
+                    <li class="pay__link"><a href="#">Оплата электронными деньгами</a></li>
+                    <li class="pay__link"><a href="#">Как оплатить если нет карты</a></li>
+                    <li class="pay__link"><a href="#">Подарочные карты</a></li>
+                </ul>
+            </div>
+            <div class="make-order">
+                <h2 class="make-order__title">Как сделать заказ</h2>
+                <p class="make-order__subtitle">
+                    Мы делаем все возможное, чтобы максимально облегчить вам оформление заказа. Для того, чтобы сделать
+                    это:
+                </p>
+                <ul class="make-order__list">
+                    <li class="make-order__item">Перейдите в раздел <a href="#">«Каталог»</a>;</li>
+                    <li class="make-order__item">
+                        под понравившимся вам товаром нажать на зеленую кнопку «Купить»: это отправляет ваш заказ в
+                        виртуальную корзину;
+                    </li>
+                    <li class="make-order__item">переходите в корзину и оформляете заказ;</li>
+                    <li class="make-order__item">система автоматически зарегистрирует вас;</li>
+                    <li class="make-order__item">
+                        ожидайте смс и email уведомления о статусе вашего заказа. При возникновении вопросов будем рады
+                        помочь по телефону
+                        8(800)500-03-20.
+                    </li>
+                </ul>
+            </div>
+            <h2 class="refund__title">Легкий возврат</h2>
+            <div class="refund">
+                <img class="refund__img" src="img/box.png" alt="refund">
+                <p class="easy-refund__subtitle">
+                    Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на понравившийся вам товар или
+                    вернём деньги.
+                </p>
+                <ul class="easy-refund__list">
+                    <li class="easy-refund__item">Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк
+                        возврата и вышлем его вам на электронную почту;</li>
+                    <li class="easy-refund__item">
+                        распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами
+                        пункте
+                        выдачи ;
+                    </li>
+                    <li class="easy-refund__item">
+                        надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное
+                        перемещение товара внутри
+                        упаковки;
+                    </li>
+                    <li class="easy-refund__item">
+                        сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте
+                        выдачи
+                        заказов или магазине;
+                    </li>
+                </ul>
+            </div>
+            <div class="warranty">
+                <h2 class="warranty__title">Гарантия</h2>
+                <div class="warranty__wrap">
+                    <p class="warrnty__descr">
+                        Информацию по всем вопросам, связанным с обменом, возвратом, ремонтом и взаимодействием с
+                        сервисным центром, вы можете
+                        уточнить непосредственно у сотрудников магазина или по телефону горячей линии.
+                    </p>
+                    <button class="warranty__btn">
+                        Гарантийные талоны
+                        <img src="img/icon/arrow-right.svg" alt="arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="feedback">
+                <h2 class="feedback__title">Обратная связь</h2>
+                <p class="feedback__subtitle">
+                    Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы всегда
+                    можете обратиться к
+                    нам:
+                </p>
+                <ul class="feedback__list">
+                    <li class="feedback__item">
+                        в социальной сети <a href="#">ВКонтакте</a>;
+                    </li>
+                    <li class="feedback__item">
+                        по электронной почте руководителю интернет-магазина <a href="#">info@bike-centre.ru</a>;
+                    </li>
+                    <li class="feedback__item">
+                        написав <a href="#">отзыв</a> о работе «Байк Центра».
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+        <div class="footer__app-wrapper">
+            <div class="footer__app">
+                <h3 class="footer__app-title">Скачайте наше приложение</h3>
+                <div class="footer__app-wrap">
+                    <img class="footer__app-code" src="img/icon/qr-code.svg" alt="qr">
+                    <div class="footer__app-btns">
+                        <button class="footer__app-btn">
+                            <a href="#"><img src="img/icon/apple.svg" alt="appstore"></a>
+                        </button>
+                        <button class="footer__app-btn">
+                            <a href="#"><img src="img/icon/google.svg" alt="googleplay"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-main">
             <div class="footer__wrap">
                 <div class="footer__help">
                     <h3 class="footer__help-title">Помощь</h3>
@@ -790,9 +968,9 @@
                 <p>Сеть магазинов "Байк Центр" ® — bike-сentre.ru</p>
             </div>
         </div>
+        <div class="container__mobile">
+        </div>
     </footer>
-
-
 
     <script src="js/script.js"></script>
 </body>
