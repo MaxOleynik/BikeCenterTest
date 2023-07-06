@@ -782,6 +782,8 @@ a {
 }
 
 .footer hr {
+	height: 1px;
+	border: none;
 	margin: 57px auto 17px;
 	background: #333;
 }
@@ -1036,6 +1038,9 @@ a {
 	display: none;
 }
 .container__mobile {
+	display: none;
+}
+.mobile__line {
 	display: none;
 }
 
@@ -1606,6 +1611,198 @@ a {
 	}
 	.footer__app-wrap {
 		display: block;
+	}
+	.footer {
+		padding-top: 18px;
+	}
+	.address__link {
+		color: #f2f2f2;
+		font-family: Roboto;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		text-decoration-line: underline;
+	}
+	.opening-hours {
+		margin-top: 16px;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 0.32px;
+	}
+	.whatsapp,
+	.telegram {
+		width: 100%;
+		color: #f2f2f2;
+		font-size: 16px;
+	}
+	.whatsapp {
+		margin-top: 42px;
+		border-bottom: 1px solid #333;
+		padding-bottom: 16px;
+	}
+	.whatsapp::after,
+	.telegram::after,
+	.help__mobile-item a::after,
+	.footer__mobile-link a::after {
+		content: '';
+		display: block;
+		width: 7px;
+		height: 12px;
+		background-image: url(../img/icon/arrow-white.svg);
+		margin-left: auto;
+	}
+	.telegram {
+		padding-top: 16px;
+	}
+	.call__btn {
+		margin-top: 36px;
+		width: 100%;
+		height: 50px;
+		border-radius: 7px;
+		background: #eb5757;
+		color: #f2f2f2;
+		font-size: 14px;
+		border: none;
+		cursor: pointer;
+	}
+	.help__mobile {
+		margin-top: 36px;
+		margin-bottom: 32px;
+	}
+	.help__mobile-list {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 30px;
+	}
+	.help__mobile-title {
+		color: #fff;
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	.help__mobile-item a {
+		color: #f2f2f2;
+		font-size: 16px;
+	}
+	.help__mobile-item a {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+	.mobile__pay a::before {
+		display: block;
+		content: '';
+		width: 17px;
+		height: 17px;
+		background-image: url(../img/icon/pay-mobile.svg);
+	}
+	.mobile__delivery a::before {
+		display: block;
+		content: '';
+		width: 17px;
+		height: 17px;
+		background-image: url(../img/icon/delivery-mobile.svg);
+	}
+	.mobile__contacts a::before {
+		display: block;
+		content: '';
+		width: 17px;
+		height: 17px;
+		background-image: url(../img/icon/contacts-mobile.svg);
+	}
+	.mobile__rat a::before {
+		display: block;
+		content: '';
+		width: 17px;
+		height: 17px;
+		background-image: url(../img/icon/rat-mobile.svg);
+	}
+	.footer hr {
+		display: none;
+	}
+	footer .mobile__line {
+		height: 1px;
+		border: none;
+		display: block;
+		margin: 0;
+		color: #333;
+		background-color: #333;
+	}
+	.footer__mobile-links {
+		margin-top: 27px;
+		display: flex;
+		flex-direction: column;
+		gap: 26px;
+	}
+	.footer__mobile-link a {
+		color: #f2f2f2;
+		font-size: 16px;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+	}
+	.subscribe__news {
+		margin-top: 36px;
+		color: #bdbdbd;
+		font-size: 14px;
+	}
+	.footer__subscribe-input {
+		margin-top: 12px;
+		width: 100%;
+		height: 37px;
+		border-radius: 7px;
+		border: 1px solid #4f4f4f;
+		background: #0c1111;
+		margin-bottom: 19px;
+	}
+	.footer__subscribe-input input {
+		background: transparent;
+		outline: none;
+		color: #fff;
+	}
+	.footer__subscribe-input input::placeholder {
+		color: #828282;
+		font-size: 14px;
+	}
+	.footer__subscribe-input button {
+		width: 58px;
+		height: 37px;
+		border-radius: 7px;
+		background: #828282;
+		padding: 11px 20px;
+	}
+	.footer__copyright {
+		margin-top: 33px;
+	}
+	.footer__copyright p {
+		color: #f2f2f2;
+		font-size: 12px;
+	}
+	.menu__navigation-btn:hover {
+		cursor: default !important;
+		pointer-events: none;
+	}
+	.menu__catalog-optionally_list a:hover {
+		cursor: default !important;
+		pointer-events: none;
+	}
+	.footer__help-link a:hover,
+	.footer__about-link a:hover {
+		cursor: default !important;
+		pointer-events: none;
+	}
+	.help__btn:hover,
+	.refund__btn:hover,
+	.warranty__btn:hover,
+	.delivery__btn:hover,
+	.footer__app-btn:hover,
+	.footer__subscribe-input button:hover,
+	.menu__search-live_category_btn button:hover {
+		cursor: default !important;
+		pointer-events: none;
 	}
 }
 @media (max-width: 320px) {
